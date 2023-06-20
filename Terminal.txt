@@ -1,0 +1,181 @@
+	Linux terminal tasks
+
+1) Посмотреть где я: pwd 
+$ pwd
+/c/Users/User/Desktop
+		
+2) Создать папку: mkdir 
+$ mkdir QA_Courses
+
+3) Зайти в папку: cd 
+$ cd QA_Courses
+
+4) Создать 3 папки: mkdir 
+$ mkdir Lessons HWs Tests
+
+5) Зайти в любую папку: cd 
+$ cd Tests
+
+6) Создать 5 файлов (3 txt, 2 json): touch 
+$ touch File1.txt File2.txt File3.txt File1.json File2.json
+
+7) Создать 3 папки: mkdir 
+$ mkdir Lesson1 Lesson2 ModulTest
+
+8. Вывести список содержимого папки: ls
+$ ls ~/Desktop/QA_Courses/Tests
+File1.json  File1.txt  File2.json  File2.txt  File3.txt  Lesson1/  Lesson2/  ModulTest/
+
+ls -la (с атрибутами и скрытыми файлами):
+$ ls -la ~/Desktop/QA_Courses/Tests
+total 4
+drwxr-xr-x 1 User 197121 0 Jun 13 14:11 ./
+drwxr-xr-x 1 User 197121 0 Jun 13 14:09 ../
+-rw-r--r-- 1 User 197121 0 Jun 13 14:09 File1.json
+-rw-r--r-- 1 User 197121 0 Jun 13 14:09 File1.txt
+-rw-r--r-- 1 User 197121 0 Jun 13 14:09 File2.json
+-rw-r--r-- 1 User 197121 0 Jun 13 14:09 File2.txt
+-rw-r--r-- 1 User 197121 0 Jun 13 14:09 File3.txt
+drwxr-xr-x 1 User 197121 0 Jun 13 14:10 Lesson1/
+drwxr-xr-x 1 User 197121 0 Jun 13 14:10 Lesson2/
+drwxr-xr-x 1 User 197121 0 Jun 13 14:11 ModulTests/
+
+9) + Открыть любой txt файл: cat
+$ cat > File1.txt
+
+10) + написать туда что-нибудь, любой текст: cat >
+$ cat >File1.txt
+Tasks:
+1. Tasks for level 1
+2. Tasks for level 2
+3. Additional tasks (optional)
+
+11) + сохранить и выйти: Ctrl+C
+
+=========
+$ cat ~/Desktop/QA_COurses/Tests/File1.txt
+Tasks:
+1. Tasks for level 1
+2. Tasks for level 2
+3. Additional tasks (optional)
+
+$ cat >> File1.txt
+4. Tasks for extra level
+
+$ cat ~/Desktop/QA_Courses/Tests/File1.txt
+Tasks:
+1. Tasks for level 1
+2. Tasks for level 2
+3. Additional tasks (optional)
+4. Tasks for extra level
+=========
+
+12) Выйти из папки на уровень выше: cd ..
+$ pwd
+/c/Users/User/Desktop/QA_Courses/Tests
+
+$ cd ..
+User@PCLite MINGW32 ~/Desktop/QA_Courses
+
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку: mv
+$ mv ~/Desktop/QA_Courses/Tests/File1.txt ~/Desktop/QA_Courses/Tests/ModulTests/File1.txt
+$ mv ~/Desktop/QA_Courses/Tests/File1.json ~/Desktop/QA_Courses/Tests/ModulTests/File1.json
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку: cp
+$ cp ~/Desktop/QA_Courses/Tests/File2.txt ~/Desktop/QA_Courses/Tests/ModulTests/File2.txt
+$ cp ~/Desktop/QA_Courses/Tests/File3.txt ~/Desktop/QA_Courses/Tests/ModulTests/File3.txt
+
+15) Найти файл по имени: find -name
+$ find -name File3.txt
+./File3.txt
+./ModulTests/File3.txt
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает: tail -f | grep
+$  tail -f File1.txt | grep Tasks File1.txt
+
+17) вывести несколько первых строк из текстового файла: head -n 2
+$ head -n 2 File1.txt
+Tasks:
+1. Tasks for level 1
+
+18) вывести несколько последних строк из текстового файла: tail -n 2
+$ tail -n 2 File4.txt
+Resources
+Books
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает:
+$ less File5.txt
+Tasks:
+1. Tasks for level 1
+2. Tasks for level 2
+3. Additional tasks (optional)
+4. Tasks for extra level
+
+для выхода: q
+
+20) вывести дату и время: date
+$ date
+Tue Jun 13 17:22:27 RTZ 2023
+
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5006/terminal-hw-request
+
+$ curl http://162.55.220.72:5006/terminal-hw-request
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+#!/bin/bash
+mkdir QA_Materials
+cd QA_Materials
+mkdir Books Exercises ZoomRecords
+cd Books
+touch Kulikov.txt Savin.txt Rusov.txt Basics.json HelpInfo.json
+mkdir EnglishMaterials DeutschMaterials RussianMaterials
+mv Basics.json ~/Desktop/QA_Materials/Exercises/Basics.json
+mv HelpInfo.json ~/Desktop/QA_Materials/Exercises/HelpInfo.json
+ls ~/Desktop/QA_Materials/Books
+
+Файл сохранен с расширением .sh
+
+=====================
+pwd - 'Print Working Directory'
+mkdir - 'Make Directory'
+cd - 'Change Directory'
+cd .. - Выход в директорию на уровень выше
+cd ../.. - Выход в директорию на два уровня выше
+touch - Создание файлов
+cat - 'Catenate' (содержимое файла) 
+cat > (добавление содержимого)
+cat >> (дополнить содержимое)
+Ctrl+C (сохранение и выход)
+cp - 'Copy'
+cp -r - Копирование папок
+mv - 'Move'
+rm - 'Remove' (пустой директории)
+rm -r - удалить директорию
+rmdir or rm -r (непустой директории)
+ls - 'List'
+ls -l (с атрибутами)
+ls - la (плюс скрытые файлы)
+find -name (поиск файла по имени)
+grep WORD File.txt - 'Search globally for lines matching the regular expression, and print them' (поиск всех строк внутри файла)
+grep -R WORD ~/Desktop/QA_Courses/Tests (поиск в репозитории)
+grep -n WORD File.txt (вывод все строк и их номеров из файла, которые содержат слово WORD)
+grep -i "word" ~/Desktop/QA_Courses/Tests (регистр неважен)
+head - вывод нескольких первых строк (по умолчанию - 10)
+head -n - вывод заданного количества строк
+head -v - перед текстом выводится навание файла
+tail - вывод нескольких последних срок (по умолчанию - 10)
+tail -n - вывод заданного количества строк
+tail -v - вывод подробной информации о файле		
+tail -q - не выводить имена файлов
+tail -f - просмотр содержимого файлов журналов в реальном времени
+less - пострничный просмотр больших текстовых файлов
+less -s - замена множества идущих подряд пустых строк одной пустой строкой
+date - вывод даты и времени
+. - текущий каталог
+.. - родительский каталог
+open . (открыть текущую директорию)
