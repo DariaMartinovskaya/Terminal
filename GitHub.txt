@@ -1,5 +1,5 @@
 cd Git_intro
-git clone https://github.com/DariaMartinovskaya/Terminal.git - создание копии (удаленного) репоитория
+git clone https://github.com/DariaMartinovskaya/Terminal.git - создание копии (удаленного) репозитория
 git add X.txt
 git add . (отправить всё)
 git status - отображение состояния рабочего каталога
@@ -7,10 +7,10 @@ git commit -m - сохранение версий ("замораживание �
 git push - отправка локальной ветки на удаленный репоиторий
 git commit -a -m (если файл "modified")
 xim new.json. i - edit, esc + :wq - exit from edit mode
-git pull - синрониация внешнего и локального репозитория
+git pull - синхрониация внешнего и локального репозитория
 ====================================
 
-GIT Homework 1
+GITHub. Homework 1
 
 JSON
  4. Создать внешний репозиторий c названием JSON: Web Git Hub > "Repositories" Tab > [New] Button > Repository Name "JSON" > Click "Add a REDMI file" > [Create repository"] Button
@@ -71,4 +71,67 @@ TXT
  16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT: Choose bug_report.txt > Edit this file button
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе: [Commit changes...] Button > [Commit changes] Button
  18. Синхронизировать внешний и локальный репозиторий TXT: git pull
+
+GIT Homework 2
+Команды, которые нужно будет знать:
+git clone - создание копии (удаленного) репозитория
+git checkout - позволяет переключаться между последними коммитами (ветками)
+git checkout -b - создание ветки и переключение на нее
+git pull - синхрониация внешнего и локального репозитория
+git push - отправка локальной ветки на удаленный репоиторий
+git push -u origin master / main / --all - связь между той веткой, в которой вы находитесь и веткой master на удалённом сервере (-u = origin master - по умолчанию)
+gut commit -m - сохранение версий ("замораживание историй")
+git status - отражает состояние текущего каталога
+git branch - показывает какие ветки есть и в какой ветке мы сейчас находимся
+git merge - выполняет слияние отдельных направлений разработки, созданных с помощью команды git branch
+
+$ git status
+$ git branch
+$ git branch apple pay
+$ git branch ApplePay
+$ branch
+$ git branch
+$ git checkout -b SamsungPay
+$ git branch
+$ git chekout main
+$ git checkout ApplePay
+$ cat > transact.json
+1) t1
+2) t2
+$ git add .
+$ git commit -m "transact.json"
+$ git checkout main
+$ git checkout ApplePay
+$ git checkout main
+$ git merge ApplePay
+$ vim transact.json
+$ git commit -m "transact.json"
+$ git checkout main
+$ vim transact.json
+$ git commit -a -m transaction.json
+$ vim transaction.json
+$ git commit -m transaction.json
+git push -u origin ApplePay
+pull request - ветка на веб интерфейсе
+
+расхождения внешнего и локального репозитория: git checkout main > ls -la > git fetch (смотрим есть ли изменения) > git pull 
+==============
+GITHub. Homework 2
+1. На локальном репозитории сделать ветки для: git branch 
+- git branch Postman
+- git branch Jmeter
+- git branch CheckLists
+- git branch BagReports
+- git branch SQL
+- git branch Charles
+- git branch MobileTesting
+
+2. Запушить все ветки на внешний репозиторий: git push -u origin --all
+епозитарий: git add BagReport.txt >> git commit -m BagReport.txt >> git push
+5. Вмержить ветку Bag Reports в Main: git checkout main >> git merge BagReports
+6. Запушить main на внешний репозиторий: git push
+7. В ветке CheckLists набросать структуру чек листа: git checkout CheckLists >> vim Checklist.txt >> i + "Text" + esc + :qw
+8. Запушить структуру на внешний репозиторий: git add Checklist.txt >> git commit -m Checklist.txt >> git push
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main: Web Git Hub >> Click [Compare & pull request] Button >> Click [Create ull request] Button >> Click [Merge pull request] Button >> Click [Confirm merge] Button
+10. Синхронизировать Внешнюю и Локальку: git checkout main >> git pull
 
