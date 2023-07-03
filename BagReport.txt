@@ -1,0 +1,15 @@
+Progect name:
+Date:
+ID:
+Severity:
+Priority:
+Environment:
+Title: 
+Precondition:
+Steps to reproduce:
+Actual result:
+Expected result:
+Link:
+Reproduced:
+Not reproduced:
+N/A: 

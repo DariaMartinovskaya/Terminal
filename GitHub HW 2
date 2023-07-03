@@ -1,0 +1,35 @@
+GITHub. Homework 2
+
+1. На локальном репозитории сделать ветки для: git branch 
+- git branch Postman
+- git branch Jmeter
+- git branch CheckLists
+- git branch BagReports
+- git branch SQL
+- git branch Charles
+- git branch MobileTesting
+
+2. Запушить все ветки на внешний репозиторий: git push -u origin --all
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта: git checkout Bag Reports >> vim BagReport.txt >> i + "Text" + esc + :wq
+4. Запушить структуру баг репорта на внешний репозиторий: git add BagReport.txt >> git commit -m BagReport.txt >> git push 
+5. Вмержить ветку Bag Reports в Main: git checkout main >> git merge BagReports
+6. Запушить main на внешний репозиторий: git push
+7. В ветке CheckLists набросать структуру чек листа: git checkout CheckLists >> vim Checklist.txt >> i + "Text" + esc + :qw
+8. Запушить структуру на внешний репозиторий: git add Checklist.txt >> git commit -m Checklist.txt >> git push
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main: Web Git Hub >> Click [Compare & pull request] Button >> Click [Create ull request] Button >> Click [Merge pull request] Button >> Click [Confirm merge] Button
+10. Синхронизировать Внешнюю и Локальку: git checkout main >> git pull
+
+=============
+Основные команды: 
+git clone - создание копии (удаленного) репозитория
+git checkout - позволяет переключаться между последними коммитами (ветками)
+git checkout -b - создание ветки и переключение на нее
+git pull - синхрониация внешнего и локального репозитория
+git push - отправка локальной ветки на удаленный репоиторий
+git push -u origin master / main / --all - связь между той веткой, в которой вы находитесь, и веткой master на удалённом сервере (-u = origin master - по умолчанию)
+gut commit -m - сохранение версий ("замораживание историй")
+git status - отражает состояние текущего каталога
+git branch - показывает какие ветки есть и в какой ветке мы сейчас находимся
+git merge - выполняет слияние отдельных направлений разработки, созданных с помощью команды git branch
+
+расхождения внешнего и локального репозитория: git checkout main > ls -la > git fetch (смотрим есть ли изменения) > git pull
