@@ -24,10 +24,12 @@
  2. Clean the window
  3. Cook a dinner
  4. Buy tickets
+ 
  Для выхода: Ctrl+C
  #### 9. Через cat добавить в текстовый файл tf_3.txt строку “the second 2”
  cat >> tf_3.txt
  the second 2
+ 
  Для выхода: Ctrl+C
  #### 10. Через cat добавить в текстовый файл tf_3.txt строку “the sec 2”
  cat >> tf_3.txt
@@ -36,26 +38,31 @@
  #### 11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3”
  cat >> tf_2.txt
  the sec 3
+
  Для выхода: Ctrl+C
  #### 12. Через cat добавить в текстовый файл tf_3.txt строку “the SeCoNd 2”
  cat >> tf_3.txt
  the SeCoNd 2
+ 
  Для выхода: Ctrl+C
  #### 13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2”
  cat >> tf_2.txt
  the seConD 2
+ 
  Для выхода: Ctrl+C
  #### 14. Сделать текстовый файл tf_4.txt в котором будет 15 строк
  cat > tf_4.txt
  1
  ...
  15
+ 
  Для выхода: Ctrl+C
  #### 15. Сделать текстовый файл tF_5.txt в котором будет 13 строк
  cat > tf_5.txt
  1
  ...
  13
+ 
  Для выхода: Ctrl+C
  #### 16. Вывести список всех файлов в папке
  ls -la
