@@ -64,6 +64,8 @@ ls - 'List'
 ls -l (с атрибутами)
 ls - la (плюс скрытые файлы)
 find -name (поиск файла по имени)
+find . -name (поиск файла по имени в текущей (.) директории)
+find -iname (поиск файла по имени, регистр не имеет значения)
 grep WORD File.txt - 'Search globally for lines matching the regular expression, and print them' (поиск всех строк внутри файла)
 grep -R WORD ~/Desktop/QA_Courses/Tests (поиск в репозитории)
 grep -n WORD File.txt (вывод все строк и их номеров из файла, которые содержат слово WORD)
