@@ -47,15 +47,15 @@ date
 2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
    
 #!/bin/bash
-mkdir QA_Materials
-cd QA_Materials
-mkdir Books Exercises ZoomRecords
-cd Books
-touch Kulikov.txt Savin.txt Rusov.txt Basics.json HelpInfo.json
-mkdir EnglishMaterials DeutschMaterials RussianMaterials
-mv Basics.json ~/Desktop/QA_Materials/Exercises/Basics.json
-mv HelpInfo.json ~/Desktop/QA_Materials/Exercises/HelpInfo.json
-ls ~/Desktop/QA_Materials/Books
+#####mkdir QA_Materials
+#####cd QA_Materials
+#####mkdir Books Exercises ZoomRecords
+#####cd Books
+#####touch Kulikov.txt Savin.txt Rusov.txt Basics.json HelpInfo.json
+#####mkdir EnglishMaterials DeutschMaterials RussianMaterials
+#####mv Basics.json ~/Desktop/QA_Materials/Exercises/Basics.json
+#####mv HelpInfo.json ~/Desktop/QA_Materials/Exercises/HelpInfo.json
+#####ls ~/Desktop/QA_Materials/Books
 
 Файл сохранен с расширением .sh
 
