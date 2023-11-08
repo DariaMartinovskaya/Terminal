@@ -1,3 +1,4 @@
+ ## HW 2 Linux terminal (GitBash) commands
  #### 1. Сделать папку dir_1 
  mkdir dir_1
  #### 2. Зайти в папку dir_1
