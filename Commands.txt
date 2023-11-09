@@ -24,7 +24,7 @@ find . -name (поиск файла по имени в текущей (.) дир
 find -iname (поиск файла по имени, регистр не имеет значения)
 grep WORD File.txt - 'Search globally for lines matching the regular expression, and print them' (поиск всех строк внутри файла)
 grep -R WORD ~/Desktop/QA_Courses/Tests (поиск в репозитории)
-grep -n WORD File.txt (вывод все строк и их номеров из файла, которые содержат слово WORD)
+grep -n WORD File.txt (вывод всех строк и их номеров из файла, которые содержат слово WORD)
 grep -i "word" ~/Desktop/QA_Courses/Tests (регистр неважен)
 grep -w "word" (поиск строк, которые включают только искомые слова полностью)
 grep -l "word" (вывод только имен файлов, в которых осуществляется поиск)
