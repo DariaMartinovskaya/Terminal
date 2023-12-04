@@ -1,52 +1,53 @@
 ## HW 1 Linux terminal (GitBash) commands 
 
-#### 1) Посмотреть где я
+#### 1) Show where I am
 pwd 	
-#### 2) Создать папку
+#### 2) Create a folder
 mkdir
-#### 3) Зайти в папку
+#### 3) Open the folder
 cd 
-#### 4) Создать 3 папки
+#### 4) Create 3 folders
 mkdir 
-#### 5) Зайти в любую папку
+#### 5) Open any folder
 cd 
-#### 6) Создать 5 файлов (3 txt, 2 json)
+#### 6) Create 5 files (3 txt, 2 json)
 touch 
-#### 7) Создать 3 папки
+#### 7) Create 3 folders
 mkdir 
-#### 8) Вывести список содержимого папки
+#### 8) List the folder's content
 ls
-#### 9) + Открыть любой txt файл
+#### 9) + Open txt file
 cat
-#### 10) + написать туда что-нибудь, любой текст
+#### 10) + Write any text to txt file
 cat > "Text"
-#### 11) + сохранить и выйти
+#### 11) + Save and exit
 Ctrl+C
-#### 12) Выйти из папки на уровень выше
+#### 12) Exit from the folder to a higher level 
 cd ..
-#### 13) переместить любые 2 файла, которые вы создали, в любую другую папку
+#### 13) Move any 2 files created to any other folder
 mv
-#### 14) скопировать любые 2 файла, которые вы создали, в любую другую папку
+#### 14) Copy any 2 files created to any other folder
 cp
-#### 15) Найти файл по имени
+#### 15) Find a file by name
 find -name File3.txt
-#### 16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает
+#### 16) View content in real time (command grep) and learn how it works
 tail -f File1.txt grep Tasks 
-#### 17) вывести несколько первых строк из текстового файла
+#### 17) List few first lines from a text file
 head -n 2 File1.txt
-#### 18) вывести несколько последних строк из текстового файла
+#### 18) List few last lines from a text file
 tail -n 2 File4.txt
-#### 19) просмотреть содержимое длинного файла (команда less) изучите как она работает
+#### 19) View the content of a long file (command less) and learn how it works
+tail -f File1.txt grep Tasks 
 less File5.txt
-для выхода: q
-#### 20) вывести дату и время
+To exit: q
+#### 20) Print date and time
 date
-#### Задание *
-1) Отправить http запрос на сервер:
+#### Task *
+1) Send http request to the server:
 
 curl http://162.55.220.72:5006/terminal-hw-request
 
-4) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+4) Write a script to run automatically points 3, 4, 5, 6, 7, 8, 13
    
 #!/bin/bash
 
@@ -68,4 +69,4 @@ mv HelpInfo.json ~/Desktop/QA_Materials/Exercises/HelpInfo.json
 
 ls ~/Desktop/QA_Materials/Books
 
-Файл сохранен с расширением .sh
+The file is saved with .sh
