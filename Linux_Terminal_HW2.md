@@ -1,24 +1,27 @@
  ## HW 2 Linux terminal (GitBash) commands
- #### 1. Сделать папку dir_1 
+ #### 1. Create folder dir_1 
  mkdir dir_1
- #### 2. Зайти в папку dir_1
+ #### 2. Open folder dir_1
  cd dir_1
- #### 3. Создать папку inner_dir_1
+ #### 3. Create folder inner_dir_1
  mkdir inner_dir_1
- #### 4. Посмотреть где ты находишься
+ #### 4. Show where you are
  pwd
- #### 5. Находясь в папке dir_1 создать пустой текстовый файл tf_1.txt
+ #### 5. Staying in folder dir_1, create an empty text file tf_1.txt
  touch tf_1.txt
- #### 6. Находясь в папке dir_1 через команду cat создать текстовый файл tf_2.txt со следующими строками: - the first 1 - the second 2 - the third 3
+ #### 6. Staying in folder dir_1 using command cat, create text file tf_2.txt with the following lines: 
+ - the first 1
+ - the second 2
+ - the third 3
  cat > tf_2.txt
  - the first 1
  - the second 2
  - the third 3
  
- Для выхода: Ctrl+C
- #### 7. Зайти в папку inner_dir_1
+ To exit: Ctrl+C
+ #### 7. Open folder inner_dir_1
  cd inner_dir_1
- #### 8. Через cat сделать текстовый файл tf_3.txt  c любыми строками
+ #### 8. Using command cat, create text file tf_3.txt with any lines
  cat > tf_3.txt
  
  Tasks:
@@ -27,104 +30,104 @@
  3. Cook a dinner
  4. Buy tickets
  
- Для выхода: Ctrl+C
- #### 9. Через cat добавить в текстовый файл tf_3.txt строку “the second 2”
+ To exit: Ctrl+C
+ #### 9. Using command cat, add line “the second 2” to text file tf_3.txt
  cat >> tf_3.txt
  
  the second 2
  
- Для выхода: Ctrl+C
- #### 10. Через cat добавить в текстовый файл tf_3.txt строку “the sec 2”
+ To exit: Ctrl+C
+ #### 10. Using command cat, add line “the sec 2” to text file tf_3.txt
  cat >> tf_3.txt
  
  the sec 2
  
- Для выхода: Ctrl+C
- #### 11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3”
+ To exit: Ctrl+C
+ #### 11. Using command cat, add line “the sec 3” to text file tf_2.txt
  cat >> tf_2.txt
  
  the sec 3
 
- Для выхода: Ctrl+C
- #### 12. Через cat добавить в текстовый файл tf_3.txt строку “the SeCoNd 2”
+ To exit: Ctrl+C
+ #### 12. Using command cat, add line “the SeCoNd 2” to text file tf_3.txt 
  cat >> tf_3.txt
  
  the SeCoNd 2
  
- Для выхода: Ctrl+C
- #### 13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2”
+ To exit: Ctrl+C
+ #### 13. Using command cat, add line “the seConD 2” to text file tf_2.txt 
  cat >> tf_2.txt
  
  the seConD 2
  
- Для выхода: Ctrl+C
- #### 14. Сделать текстовый файл tf_4.txt в котором будет 15 строк
+ To exit: Ctrl+C
+ #### 14. Create text file tf_4.txt with 15 lines
  cat > tf_4.txt
  
  1
  ...
  15
  
- Для выхода: Ctrl+C
- #### 15. Сделать текстовый файл tF_5.txt в котором будет 13 строк
+ To exit: Ctrl+C
+ #### 15. Create text file tF_5.txt with 13 lines
  cat > tf_5.txt
  
  1
  ...
  13
  
- Для выхода: Ctrl+C
- #### 16. Вывести список всех файлов в папке
+ To exit: Ctrl+C
+ #### 16. List all files in the folder
  ls -la
- #### 17. Выйти из папки inner_dir_1
+ #### 17. Exit from folder inner_dir_1
  cd ..
- #### 18. Вывести содержимое файла tf_3.txt в терминал
+ #### 18. List content of tf_3.txt in terminal
  cat inner_dir_1/tf_3.txt
- #### 19. Найти путь к файлу tf_4.txt
+ #### 19. Find the way to tf_4.txt
  find -name "tf_4.txt"
- #### 20. Отчистить файл tf_4.txt от содержимого без удаления самого файла
+ #### 20. Clean content of tf_4.txt with no deletion
  '>' tf_4.txt
- #### 21. Найти путь к файлам у которых есть  “tf” в названии
+ #### 21. Find the way to files with “tf” in the name
  find -name "*tf*"
- #### 22. Найти путь к файлам у которых есть  “tf” в названии и буквы в любом регистре
+ #### 22. Find the way to files with “tf” in the name, letters in any case
  find -iname "*tf*"
- #### 23. Найти строки в файлах где есть комбинация букв “sec” в текущей папке
+ #### 23. Find lines in files with letter combination of “sec” in the current folder
  grep sec *
- #### 24. Найти строки в файлах где есть комбинация букв “sec” в любом регистре в текущей папке
+ #### 24. Find lines in files with letter combination of “sec” in any case in the current folder
  grep -i sec *
- #### 25. Найти строки в файлах где есть только комбинация букв “sec” в текущей папке
+ #### 25. Find lines in files with letter combination of “sec” only in the current folder
  grep -w sec *
- #### 26. Найти строки в файлах где есть только комбинация букв “sec” в любом регистре в текущей папке
+ #### 26. Find lines in files with letter combination of “sec” only, in any case, in the current folder
  grep -i -w sec
- #### 27. Найти строки в файлах где есть комбинация букв “second” в текущей папке
+ #### 27. Find lines in files with letter combination of “second” in the current folder
  grep second *
- #### 28. Найти строки в файлах где есть комбинация букв “second” в любом регистре в текущей папке
+ #### 28. Find lines in files with letter combination of “second” in any case in the current folder
  grep -i second *
- #### 29. Найти строки в файлах где есть комбинация букв “second” во всех папках ниже уровнем
+ #### 29. Find lines in files with letter combination of “second” in all folders below the level
  grep -r second 
- #### 30. Найти только путь и название файла в строках которых есть комбинация букв “second” в текущей папке
+ #### 30. Find the way and file's name only in lines with letter combination of “second” in the current folder
  grep -l second * | xargs realpath
- #### 31. Найти все строки во всех файлах где нет комбинации “second”
+ #### 31. Find all lines in all files without letter combination of “second”
  grep -r -v second
- #### 32. Найти только название и путь к файлам где нет комбинации “second”
+ #### 32. Find the file's name and way only to files without letter combination of “second”
  grep -r -v -l second | xargs realpath
- #### 33. Вывести в терминал 4 последних строк любого текстового файла
+ #### 33. List 4 last lines of any text line to terminal
  tail -4 tf_2.txt
- #### 34. Вывести в терминал 4 первые строки любого текстового файла
+ #### 34. List 4 first lines of any text file to terminal
  head -4 tf_2.txt
- #### 35. Команда в одну строку. Создать папку и создать текстовый файл с содержиммым
+ #### 35. One line command. Create a folder and text file with any content 
  mkdir dir_inner_2 && cat > dir_inner_2/Test_file.txt
  
  Hello world!
  
- Для выхода: Ctrl+C
- #### 36. Команда в одну строку. Переместить в любую одну папку текстовые файлы у которых в содержимом есть слово “sec”
+ To exit: Ctrl+C
+ #### 36. One line command. Move text files with word “sec” in the content to any one folder
  grep -r -l -w sec | xargs mv -t dir_inner_2
- #### 37. Команда в одну строку. Скопировать в любую одну папку текстовые файлы у которых в содержимом есть слово “sec”
+ #### 37. One line command. Copy text files with word “sec” in the content to any one folder
  grep -r -l -w sec | xargs cp -t dir_inner_2
- #### 38. Команда в одну строку. Найти все строки c “sec” во всех текстовых файлах, скопировать и вставить эти строки в один новый созданный текстовый файл.
+ #### 38. One line command. Find all lines with word “sec” in all text files, copy and past them into one created text file. 
  grep -r sec | cat > Filefortask38.txt
- #### 39. Команда в одну строку. Удалить текстовые файлы у которых в содержимом есть слово “sec”
+ #### 39. One line command. Delete all text files with word “sec” in the content
  grep -r -l sec | xargs rm
- #### 40. Просто вывести в терминал строку “Good job!!”
+ #### 40. To print “Good job!!” in terminal
  echo "Good job!"
