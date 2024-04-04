@@ -1,9 +1,9 @@
 # Terminal
-#### Here are terminal commands that I used to do homework tasks during my QA studing:
+#### Here are links to terminal commands that I used to do homework tasks during my QA studing:
 
-<a href="https://github.com/DariaMartinovskaya/Terminal/blob/main/Linux_Terminal_HW1.md" target="_blank">Linux_Terminal_HW1</a>: Working with files and repositories, script to run set of commands automatically
+<a href="https://github.com/DariaMartinovskaya/Terminal/blob/main/Linux_Terminal_HW1.md" target="_blank">Linux_Terminal_HW1</a>: working with files and repositories, script to run set of commands automatically
 
-<a href="https://github.com/DariaMartinovskaya/Terminal/blob/main/Linux_Terminal_HW2.md" target="_blank">Linux_Terminal_HW2</a>: Editing,moving and deleting files, search of files, lines, way to a file, file's name, printing notices in terminal
+<a href="https://github.com/DariaMartinovskaya/Terminal/blob/main/Linux_Terminal_HW2.md" target="_blank">Linux_Terminal_HW2</a>: editing,moving and deleting files, search of files, lines, way to a file, file's name, printing notices in terminal
 
 #### Here is the certificate confirming that I successfully passed the exam on Linux terminal commands organized by Vadim Ksendzov's QA Course: 
 <div>
